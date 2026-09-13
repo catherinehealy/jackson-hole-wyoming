@@ -246,6 +246,37 @@
  background:var(--rust);
  border-color:var(--rust);
  }
+ /* transitional stops — driving, logistics, nothing to plan around */
+ .stop.minor{
+ padding-bottom:16px;
+ }
+ .stop.minor::before{
+ width:6px; height:6px;
+ left:-23.5px; top:8px;
+ border-width:1.5px;
+ border-color:var(--line);
+ background:var(--paper);
+ }
+ .stop.minor .stop-time{
+ font-size:10.5px;
+ color:var(--ink);
+ opacity:0.5;
+ }
+ .stop.minor .stop-name{
+ font-family:'IBM Plex Mono',monospace;
+ font-weight:600;
+ font-size:12.5px;
+ letter-spacing:0.02em;
+ text-transform:uppercase;
+ color:var(--ink);
+ opacity:0.55;
+ margin-bottom:1px;
+ }
+ .stop.minor .stop-detail{
+ font-size:12px;
+ opacity:0.6;
+ max-width:480px;
+ }
  .stop-time{
  font-family:'IBM Plex Mono',monospace;
  font-size:11.5px;
@@ -450,12 +481,12 @@
  <div class="stop-name">Land at Jackson Hole Airport</div>
  <div class="stop-detail">Flight UA2193 arrives from Denver.</div>
  </div>
- <div class="stop">
+ <div class="stop minor">
  <div class="stop-time">1:15 PM</div>
  <div class="stop-name">Rental car pickup</div>
  <div class="stop-detail">Allow ~30 minutes for bags and the counter.</div>
  </div>
- <div class="stop">
+ <div class="stop minor">
  <div class="stop-time">1:40 PM</div>
  <div class="stop-name">Drive to Teton Village</div>
  <div class="stop-detail">~20 minutes, Tetons in view most of the way.</div>
@@ -465,7 +496,7 @@
  <div class="stop-name">Check in — Four Seasons Jackson Hole</div>
  <div class="stop-detail">Settle in and unpack.</div>
  </div>
- <div class="stop">
+ <div class="stop minor">
  <div class="stop-time">2:15 PM</div>
  <div class="stop-name">Drop bags, quick change</div>
  <div class="stop-detail">The tram base is right at Teton Village — no drive needed.</div>
@@ -476,7 +507,7 @@
  <div class="stop-detail">First-come, first-served, runs 9 AM–5 PM, no reservation needed. Twelve minutes up to 10,450 ft — waffles at Corbet's Cabin at the top are non-negotiable.</div>
  <span class="tag easy">No booking needed</span>
  </div>
- <div class="stop">
+ <div class="stop minor">
  <div class="stop-time">3:30 PM</div>
  <div class="stop-name">Drive to downtown Jackson</div>
  <div class="stop-detail">~20 minutes from Teton Village to Town Square.</div>
@@ -487,7 +518,7 @@
  <div class="stop-detail">Wander the galleries, boutiques, and outfitters around Town Square and its famous elk-antler arches — a relaxed first taste of Jackson before dinner.</div>
  <span class="tag easy">No booking needed</span>
  </div>
- <div class="stop">
+ <div class="stop minor">
  <div class="stop-time">5:30 PM – 6:45 PM</div>
  <div class="stop-name">Pre-dinner downtime</div>
  <div class="stop-detail">Coffee or a drink downtown, or head back to the hotel to change before dinner — whichever feels right after travel.</div>
@@ -528,7 +559,7 @@
  <div class="stop-detail">145 E. Broadway · (307) 200-6708. Counter service, no reservations — go early before the line builds. Breakfast at the Four Seasons is also an easy option if you'd rather skip the trip into town this morning.</div>
  <span class="tag easy">Optional — hotel breakfast also available</span>
  </div>
- <div class="stop">
+ <div class="stop minor">
  <div class="stop-time">9:40 AM</div>
  <div class="stop-name">Depart hotel for horseback outfitter</div>
  <div class="stop-detail">~40 minutes each way — confirm exact meeting location and outfitter when booking.</div>
@@ -539,12 +570,12 @@
  <div class="stop-detail">2.5-hour group ride with a simple lunch included on the trail.</div>
  <span class="tag book">Confirm booking</span>
  </div>
- <div class="stop">
+ <div class="stop minor">
  <div class="stop-time">1:30 PM</div>
  <div class="stop-name">Drive back to Teton Village</div>
  <div class="stop-detail">~40 minutes.</div>
  </div>
- <div class="stop">
+ <div class="stop minor">
  <div class="stop-time">~2:30 PM</div>
  <div class="stop-name">Back at Four Seasons — free time</div>
  <div class="stop-detail">Change out of riding clothes, relax before the spa.</div>
@@ -555,7 +586,7 @@
  <div class="stop-detail">Book treatments in advance — this is the relaxation window built into the trip.</div>
  <span class="tag note">Book treatments ahead</span>
  </div>
- <div class="stop">
+ <div class="stop minor">
  <div class="stop-time">5:00 PM</div>
  <div class="stop-name">Depart hotel for the fairgrounds</div>
  <div class="stop-detail">~20–25 minutes from Teton Village.</div>
@@ -567,7 +598,7 @@
  <span class="tag book"><a href="https://seatgeek.com/thunder-in-the-tetons-tickets/sports/2026-09-18-7-pm/18176509" target="_blank">Buy tickets on SeatGeek →</a></span>
  <span class="tag book"><a href="https://www.stubhub.com/thunder-in-the-tetons-jackson-tickets-9-18-2026/event/160882142/" target="_blank">Or on StubHub →</a></span>
  </div>
- <div class="stop">
+ <div class="stop minor">
  <div class="stop-time">~9:30 PM</div>
  <div class="stop-name">Show ends, return to hotel</div>
  <div class="stop-detail"></div>
@@ -590,7 +621,7 @@
  </div>
  <div class="day-map" id="map-day3"></div>
  <div class="timeline">
- <div class="stop">
+ <div class="stop minor">
  <div class="stop-time">8:00 AM</div>
  <div class="stop-name">Depart Four Seasons</div>
  <div class="stop-detail">Coffee to go. North through Grand Teton National Park toward Moran, then on to Yellowstone's South Entrance.</div>
@@ -638,17 +669,17 @@
  </div>
  </div>
 
- <div class="stop">
+ <div class="stop minor">
  <div class="stop-time">3:30 PM</div>
  <div class="stop-name">Begin drive south, exit Yellowstone</div>
  <div class="stop-detail">Via Fishing Bridge, West Thumb, and the South Entrance.</div>
  </div>
- <div class="stop milestone">
+ <div class="stop minor">
  <div class="stop-time">5:15 PM</div>
  <div class="stop-name">Re-enter Grand Teton National Park</div>
  <div class="stop-detail">Approaching Moose.</div>
  </div>
- <div class="stop milestone">
+ <div class="stop minor">
  <div class="stop-time">6:00 PM</div>
  <div class="stop-name">Back at Four Seasons</div>
  <div class="stop-detail">Straight back to the hotel tonight rather than a stop along the way — a long day out, good to unwind before a late dinner.</div>
@@ -683,7 +714,7 @@
  <div class="stop-detail">Meet outside the hotel; sunrise is ~6:40 AM this time of year, so pickup happens well before first light.</div>
  <span class="tag book">Book early — weather-dependent</span>
  </div>
- <div class="stop">
+ <div class="stop minor">
  <div class="stop-time">5:30 AM</div>
  <div class="stop-name">Arrive launch site</div>
  <div class="stop-detail">Balloon inflation and safety briefing.</div>
@@ -698,22 +729,22 @@
  <div class="stop-name">Landing &amp; champagne toast</div>
  <div class="stop-detail"></div>
  </div>
- <div class="stop">
+ <div class="stop minor">
  <div class="stop-time">8:45 AM</div>
  <div class="stop-name">Back at Four Seasons</div>
  <div class="stop-detail"></div>
  </div>
- <div class="stop">
+ <div class="stop minor">
  <div class="stop-time">9:00 AM</div>
  <div class="stop-name">Shower, finish packing, check out</div>
  <div class="stop-detail">Have bags mostly packed the night before to keep this window comfortable.</div>
  </div>
- <div class="stop">
+ <div class="stop minor">
  <div class="stop-time">10:00 AM</div>
  <div class="stop-name">Depart hotel for the airport</div>
  <div class="stop-detail">~20 minutes.</div>
  </div>
- <div class="stop">
+ <div class="stop minor">
  <div class="stop-time">10:30 AM</div>
  <div class="stop-name">Arrive JAC Airport</div>
  <div class="stop-detail">Small airport — this gives a comfortable buffer before boarding.</div>
